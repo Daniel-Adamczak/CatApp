@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #f1f4c6; 
+    --secondary-color: #d5e1a3; 
+    --accent-color: #837d7d; 
+    --font-color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--font-color);
+    margin-bottom: 10px; 
+    font-size: 3rem;
+}
+
+header button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+header button:hover {
+    background-color: #6c6a6a; 
+    color: #fff; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjusted to align-items to center content */
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.first-section__fact, main li, main section div p {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+main ul {
+    list-style-type: none;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color); 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+main img {
+    width: 80vw;
+    max-width: 500px; /* To prevent the image from becoming too large on wider screens */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensures the margin: auto applies properly */
+    margin: 0 auto; /* Centering the image */
+}
+
+.fourth-section__profile .catProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth-section__profile .catProfile img {
+    border: 5px solid var(--accent-color); 
+    margin-bottom: 10px; 
+}
+
+.fourth-section__profile .catProfile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
