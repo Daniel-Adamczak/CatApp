@@ -96,7 +96,7 @@ function composeCatImgWithQuote(docElement) {
     const singleCatObject = await getCatObject();
     const catImg = document.createElement('img');
     
-    const catProfile = document.createElement('div');
+    const catProfile = document.createElement('article');
     const catProfileInfo = document.createElement('p');
     const catProfileName = document.createElement('h2');
     const catProfileDescription = document.createElement('p')
